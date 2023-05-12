@@ -1,25 +1,25 @@
 {
-  "name": "nhsbsa-digital-playbook",
+  "name": "nhsbsa-docs",
   "version": "1.0.0",
-  "description": "Playbook for NHSBSA Digital, Data and Technology projects",
+  "description": "Eleventy based static site generator with NHS styling, filter, components and templates to ease creation of documentation static sites",
   "main": "index.js",
   "scripts": {
-    "start": "npx @11ty/eleventy --serve --pathprefix 'nhsbsa-digital-playbook'",
-    "build": "env NODE_ENV=production npx eleventy --pathprefix 'nhsbsa-digital-playbook'",
+    "start": "npx @11ty/eleventy --serve --pathprefix 'nhsbsa-docs'",
+    "build": "env NODE_ENV=production npx eleventy --pathprefix 'nhsbsa-docs'",
     "test": "NODE_ENV=test jest",
     "test:eslint": "NODE_ENV=test npx eslint ./src ./lib",
     "test:coverage": "NODE_ENV=test jest --coverage"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nhsbsa/nhsbsa-digital-playbook.git"
+    "url": "git+https://github.com/nhsbsa/nhsbsa-docs.git"
   },
   "author": "NHSBSA",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/nhsbsa/nhsbsa-digital-playbook/issues"
+    "url": "https://github.com/nhsbsa/nhsbsa-docs/issues"
   },
-  "homepage": "https://github.com/nhsbsa/nhsbsa-digital-playbook#readme",
+  "homepage": "https://github.com/nhsbsa/nhsbsa-docs#readme",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.0",
     "@11ty/eleventy-navigation": "^0.3.2",
