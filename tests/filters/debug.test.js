@@ -1,4 +1,4 @@
-const debug = require('../../_filters/debug');
+const debug = require('../../lib/_filters/debug');
 
 describe('debug', () => {
   test('should export module as a function', () => {

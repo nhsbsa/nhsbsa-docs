@@ -1,4 +1,4 @@
-const formatNumber = require('../../_filters/fixed');
+const formatNumber = require('../../lib/_filters/fixed');
 
 describe('formatNumber should format number to the specified number of digits. If more or no digits provided then input will be returned', () => {
   test('should export module as a function', () => {
