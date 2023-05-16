@@ -1,4 +1,4 @@
-const checkBlank = require('../../_filters/blank');
+const checkBlank = require('../../lib/_filters/blank');
 
 describe('blank', () => {
   test('should export module as a function', () => {
