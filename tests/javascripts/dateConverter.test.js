@@ -1,5 +1,5 @@
 const { DateTime } = require('luxon');
-const dateConverter = require('../../_javascripts/dateConverter');
+const dateConverter = require('../../lib/_javascripts/dateConverter');
 
 describe('dateConverter', () => {
   test('should export module as a function', () => {

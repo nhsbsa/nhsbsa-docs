@@ -1,4 +1,4 @@
-const resolveUrl = require('../../_filters/urls');
+const resolveUrl = require('../../lib/_filters/urls');
 
 describe('urlResolver', () => {
   test('should export module as a function', () => {

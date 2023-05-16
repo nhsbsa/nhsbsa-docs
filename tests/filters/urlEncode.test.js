@@ -1,4 +1,4 @@
-const urlEncode = require('../../_filters/urlEncode');
+const urlEncode = require('../../lib/_filters/urlEncode');
 
 describe('urlEncode', () => {
   test('should export module as a function', () => {

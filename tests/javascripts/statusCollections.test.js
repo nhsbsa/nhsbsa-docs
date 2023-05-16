@@ -1,4 +1,4 @@
-const statusCollections = require('../../_javascripts/statusCollections');
+const statusCollections = require('../../lib/_javascripts/statusCollections');
 
 describe('statusCollections', () => {
   test('should export module as a function', () => {

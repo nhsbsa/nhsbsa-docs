@@ -1,4 +1,4 @@
-const addStatusBadges = require('../../_computed/badges');
+const addStatusBadges = require('../../lib/_computed/badges');
 
 describe('badge status', () => {
   // default fixture

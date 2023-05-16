@@ -1,4 +1,4 @@
-const checkForReview = require('../../_computed/reviewData');
+const checkForReview = require('../../lib/_computed/reviewData');
 const { DateTime } = require('luxon');
 
 describe('reviewData empty dataset tests', () => {

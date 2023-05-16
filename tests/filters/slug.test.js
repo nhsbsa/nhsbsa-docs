@@ -1,4 +1,4 @@
-const slugify = require('../../_filters/slug');
+const slugify = require('../../lib/_filters/slug');
 
 describe('slugify', () => {
   test('should export module as a function', () => {

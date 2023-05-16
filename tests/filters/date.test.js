@@ -1,5 +1,5 @@
 const { DateTime } = require('luxon');
-const formatDate = require('../../_filters/date');
+const formatDate = require('../../lib/_filters/date');
 
 describe('formatDate', () => {
   const date = DateTime.now().minus({ days: 1 });

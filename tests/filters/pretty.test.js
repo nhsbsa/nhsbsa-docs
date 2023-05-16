@@ -1,4 +1,4 @@
-const removeIndexHtml = require('../../_filters/pretty');
+const removeIndexHtml = require('../../lib/_filters/pretty');
 
 describe('pretty', () => {
   test('should export module as a function', () => {

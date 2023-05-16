@@ -1,4 +1,4 @@
-const sort = require('../../_filters/sort');
+const sort = require('../../lib/_filters/sort');
 
 describe('sort', () => {
   test('should export module as a function', () => {

@@ -1,4 +1,4 @@
-const sanitizeString = require('../../_filters/tokenize');
+const sanitizeString = require('../../lib/_filters/tokenize');
 
 describe('toekenize', () => {
   test('should export module as a function', () => {

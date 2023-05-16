@@ -1,4 +1,4 @@
-const widont = require('../../_filters/widont');
+const widont = require('../../lib/_filters/widont');
 
 describe('widont', () => {
   test('should export module as a function', () => {
