@@ -21,23 +21,13 @@ npm i nhsbsa-docs
 
 Visit the official [npm-install documentation][npm_docs] for installation options.
 
-## Usage
+## Project setup
 
-tbc
+The [setup documentation](docs/running-locally.md) provides instructions for local project configuration and setup.
 
-## Running locally
+## Local development
 
-tbc
-
-## Testing the application
-
-Test scripts can be found in the `package.json`.
-
-```bash
-1. npm test
-2. npm test:unit
-3. npm test:coverage
-```
+Read the [local development documentation](docs/local-development.md) for information regarding local development and [testing](docs/local-development.md#testing-the-application) of the `nhsbsa-docs` library.
 
 ## Contribution
 
