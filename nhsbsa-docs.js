@@ -102,15 +102,13 @@ function initDocs(eleventyConfig) {
     includeDoctype: true,
   });
   const extendedCss = appConfig?.extendBaseCss;
-  const cssLocation = extendedCss?.cssLocation;
-  const cssFile = extendedCss?.cssFileName;
-  const cssOutDir = extendedCss?.outDir;
 
   eleventyConfig.addPlugin(require('eleventy-plugin-dart-sass'), {
-    sassLocation: cssLocation ?? '../nhsbsa-docs/lib/_stylesheets/',
-    sassIndexFile: cssFile ?? 'application.scss',
+    sassLocation:
+      extendedCss?.cssLocation ?? '../nhsbsa-docs/lib/_stylesheets/',
+    sassIndexFile: extendedCss?.cssFileName ?? 'application.scss',
     outputStyle: 'expanded',
-    outDir: cssOutDir ?? '_site/nhsbsa-docs/',
+    outDir: extendedCss?.outDir ?? '_site/nhsbsa-docs/',
     outPath: 'stylesheets',
     outFileName: 'application.css',
   });
