@@ -46,8 +46,6 @@ npm i
 
 ### 4. Create a local package or symlink
 
-After making changes to your local project.
-
 You can package the nhsbsa-docs code. Then install the compiled package within the project you wish to use the library.
 
 ```bash
@@ -64,6 +62,7 @@ npm i [relative-path]/nhsbsa-docs-[version].tgz
 #### Creating a symlink
 
 Run the following command within the `nhsbsa-docs` directory.
+> If you use this method. You will need to add the nhsabsa-docs dependencies to your project. Dependencies can be found within the `deps.txt` file.
 
 ```bash
 npm link
@@ -87,7 +86,7 @@ Running test scripts only applies to local-development, meaning that tests won't
 3. npm test:coverage
 ```
 
-Test scripts can be found in the `package.json`.
+> A full list of available scripts can be found in the `package.json`.
 
 [node_js]: <https://nodejs.org/en/>
 [npm]: <https://docs.npmjs.com>
