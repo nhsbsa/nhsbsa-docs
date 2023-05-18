@@ -1,38 +1,17 @@
-const fs = require('fs');
-const yaml = require('js-yaml');
-const path = require('path');
+const { logStartupLogo, parseUserAppConfig } = require('./lib/utils');
 
-function parseUserAppConfig() {
-  const configFile = 'nhsbsa-docs.config.yaml';
-  try {
-    const fileContents = fs.readFileSync(`./${configFile}`, 'utf8');
-    const config = yaml.load(fileContents);
-    return config;
-  } catch (error) {
-    if (error.code === 'ENOENT') {
-      console.info(
-        `[nhsbsa-docs]: It looks like you don't have a ${configFile} file. Using defaults instead.`
-      );
-    } else {
-      console.error(error);
-      return null;
-    }
-  }
-}
-
-function logStartupLogo() {
-  console.log(`
-     __ _  _  _  ____  ____  ____   __       ____   __    ___  ____ 
-    (  ( \\/ )( \\/ ___)(  _ \\/ ___) / _\\  ___(    \\ /  \\  / __)/ ___)
-    /    /) __ (\\___ \\ ) _ (\\___ \\/    \\(___)) D ((  O )( (__ \\___ \\
-    \\_)__)\\_)(_/(____/(____/(____/\\_/\\_/    (____/ \\__/  \\___)(____/
-  `);
-}
-
+/**
+ * Initialises the nhsbsa-docs site.
+ *
+ * @param {EleventyConfig} eleventyConfig The Eleventy configuration object.
+ */
 function initDocs(eleventyConfig) {
   logStartupLogo();
+  // user app configuration if present
   const appConfig = parseUserAppConfig();
 
+  // library configuration
+  const path = require('path');
   eleventyConfig.setLibrary(
     'njk',
     require('./lib/_libraries/nunjucks')([
@@ -83,6 +62,7 @@ function initDocs(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/**/*.docx');
 
   //data
+  const yaml = require('js-yaml');
   eleventyConfig.addDataExtension('yaml', (contents) => yaml.load(contents));
 
   // plugins
