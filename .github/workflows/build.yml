@@ -26,11 +26,3 @@ jobs:
         run: |
           npm ci
           BASE_URL=${{ vars.BASE_URL }} npm run build          
-
-      - name: Deploy GH Pages
-        if: contains(github.ref, 'main')
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          publish_dir: ./_site/nhsbsa-digital-playbook
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          exclude_assets: '_redirects'
