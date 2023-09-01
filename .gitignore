@@ -1,9 +1,6 @@
 ### Node ###
 node_modules/
 
-### 11ty ###
-_site/
-
 ### VS Code ###
 .vscode/
 workspace.code-workspace
