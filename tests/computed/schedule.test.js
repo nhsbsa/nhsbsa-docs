@@ -1,4 +1,4 @@
-const getReleaseAdoptionSchedule = require('../../_computed/schedule');
+const getReleaseAdoptionSchedule = require('../../lib/_computed/schedule');
 const { DateTime } = require('luxon');
 
 describe('releaseAdoptionSchedule empty dataset tests', () => {

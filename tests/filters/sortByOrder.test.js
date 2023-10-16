@@ -1,4 +1,4 @@
-const sortByOrder = require('../../_filters/sortByOrder');
+const sortByOrder = require('../../lib/_filters/sortByOrder');
 
 describe('sortByOrder', () => {
   test('should export module as a function', () => {

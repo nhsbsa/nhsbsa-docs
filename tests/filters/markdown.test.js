@@ -1,4 +1,4 @@
-const markdown = require('../../_filters/markdown');
+const markdown = require('../../lib/_filters/markdown');
 
 describe('markdown', () => {
   test('should export module as a function', () => {

@@ -1,4 +1,4 @@
-const sumRows = require('../../_filters/total-from-rows');
+const sumRows = require('../../lib/_filters/total-from-rows');
 
 describe('total-from-rows', () => {
   test('should export module as a function', () => {
