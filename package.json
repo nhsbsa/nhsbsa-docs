@@ -7,7 +7,7 @@
     "start": "npx @11ty/eleventy --serve --pathprefix 'nhsbsa-docs'",
     "build": "env NODE_ENV=production npx eleventy --pathprefix 'nhsbsa-docs'",
     "test": "NODE_ENV=test jest",
-    "test:lint": "NODE_ENV=test npx eslint ./tests ./lib",
+    "test:lint": "NODE_ENV=test npx eslint ./lib",
     "test:coverage": "NODE_ENV=test jest --coverage"
   },
   "repository": {
